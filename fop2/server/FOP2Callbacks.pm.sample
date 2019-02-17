@@ -1,0 +1,126 @@
+package FOP2Callbacks;
+
+# Example module to customize and tweak FOP2 behaviour
+my %redirected;
+
+sub flashCommand {
+    # This function is called when certain commands are sent from a flash client
+
+    $command  = shift;
+    @parameters = @_;
+
+    my $return = "";
+    my @allreturn = ();
+    
+    if($command eq "setastdb") {
+
+        # DND Integration from FOP2 to FreePBX ASTDB DND
+        #
+        # DEPRECATED! All of this can be done from the new plugin
+        # architecture
+        #
+        # This is for debug
+        #my $cont=0;
+        #foreach my $param (@parameters) {
+        #    print "command $comando -- Parameter $cont = $param\n";
+        #    $cont++;
+        #}
+
+        #if($parameters[1] eq "fop2state") {
+        #    if($parameters[3] ne "") {
+        #        $return  = "Action: Command\r\n";
+        #        $return .= "Command: database put DND ".$parameters[2]." YES\r\n";
+        #        $return .= "\r\n";
+        #        push @allreturn, $return;
+        #    } else {
+        #        $return  = "Action: Command\r\n";
+        #        $return .= "Command: database del DND ".$parameters[2]."\r\n";
+        #        $return .= "\r\n";
+        #        push @allreturn, $return;
+        #    }
+        #}
+        
+        return @allreturn;
+
+    } elsif($command eq "pickupActive") {
+        #my $cont=0;
+        #foreach my $param (@parameters) {
+        #    print "command $comando -- Parameter $cont = $param\n";
+        #    $cont++;
+        #}
+        #print "Setting redirected(".$parameters[1].")\n";
+        $redirected{$parameters[0]}=1;
+        return @allreturn;
+
+    } elsif($command eq "auth") {
+        #my $cont=0;
+        #foreach my $param (@parameters) {
+        #    print "command $comando -- Parameter $cont = $param\n";
+        #    $cont++;
+        #}
+        return @allreturn;
+    } elsif($command eq "customconference") {
+        # my $contexto = $parameters[2];
+        # my $mychannel = main::get_btn_config( "$contexto", $parameters[0], 'MAINCHANNEL');
+        # my $extension_to_dial = $parameters[1];
+        #
+        # $return  = "Action: Originate\r\n";
+        # $return .= "Channel: Local/$extension_to_dial\@from-internal\r\n";
+        # $return .= "Application: ChanSpy\r\n";
+        # $return .= "Data: $mychannel,BEq\r\n";
+        # $return .= "\r\n";
+        # push @allreturn, $return;
+        # return @allreturn;
+    }
+
+}
+
+sub amiCommand {
+
+    # Received an event from Asterisk Manager Interfase
+
+    $command  = shift;
+
+    if($command eq "LEAVE") {
+
+        # Used with fop2-dummy context for writing a line
+        # to queue_log so redirects OUT of a queue are not
+        # counted as abandoned calls
+
+        %event = @_;
+        my $return = "";
+        my @allreturn = ();
+
+        if( defined ( $redirected { $event{Channel} } )) {
+            # This abandon is in fact a call pickup or redirection
+            # We perform a dummy originate to log a NOTABANDON event 
+            # in queue_log
+            delete $redirected { $event{Channel} };
+
+            my $tiempo = time();
+            $tiempo = $tiempo + 30;
+            my $uniid  = $event{Uniqueid};
+            my $queue  = $event{Queue};
+
+            $return = "Action: Originate\r\n";
+            $return .= "Channel: Local/dummy\@fop2-dummy/n\r\n";
+            $return .= "Application: QueueLog\r\n";
+            $return .= "Data: $queue,$uniid,NONE,NOTABANDON,0,0,0\r\n";
+            $return .= "Async: true\r\n";
+            $return .= "\r\n";
+
+            push @allreturn, $return;
+            return @allreturn;
+        }
+
+    } elsif($command eq "HANGUP") {
+        # Garbage Collect
+        %event = @_;
+        if( defined ( $redirected { $event{Channel} } )) {
+            # This abandon is in fact a call pickup or redirection
+            delete $redirected { $event{Channel} };
+        }
+    } 
+}
+
+1;

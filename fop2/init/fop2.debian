@@ -1,0 +1,76 @@
+#! /bin/sh
+
+### BEGIN INIT INFO
+# Provides:          fop2
+# Required-Start:    $local_fs $network $syslog
+# Required-Stop:     $local_fs $network $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start fop2 at boot time
+# Description:       Daemon for the flash operator panel 2
+### END INIT INFO
+#
+
+set -e
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/local/fop2/fop2_server
+NAME=fop2
+DESC="Flash Operator Panel 2"
+
+PIDFILE=/var/run/$NAME.pid
+SCRIPTNAME=/etc/init.d/$NAME
+
+[ -f /etc/default/fop2 ] && . /etc/default/fop2
+
+# Gracefully exit if the package has been removed.
+test -x $DAEMON || exit 0
+
+# Read config file if it is present.
+#if [ -r /etc/default/$NAME ]
+#then
+#       . /etc/default/$NAME
+#fi
+
+case "$1" in
+  start)
+        echo -n "Starting $DESC: $NAME"
+        start-stop-daemon --start --pidfile $PIDFILE --startas $DAEMON -- $OPTIONS 
+        echo "."
+        ;;
+  stop)
+        echo -n "Stopping $DESC: $NAME"
+        start-stop-daemon --stop --pidfile $PIDFILE
+        echo "."
+        ;;
+  reload)
+        
+        #       If the daemon can reload its config files on the fly
+        #       for example by sending it SIGHUP, do it here.
+        #
+        #       If the daemon responds to changes in its config file
+        #       directly anyway, make this a do-nothing entry.
+        #
+         echo -n "Reloading $DESC configuration..."
+         start-stop-daemon --stop --pidfile $PIDFILE --signal HUP
+         echo "done."
+  ;;
+  restart|force-reload)
+        #
+        #       If the "reload" option is implemented, move the "force-reload"
+        #       option to the "reload" entry above. If not, "force-reload" is
+        #       just the same as "restart".
+        #
+        echo -n "Restarting $DESC: $NAME"
+        start-stop-daemon --stop --quiet --oknodo --pidfile $PIDFILE --startas $DAEMON
+        sleep 1
+        start-stop-daemon --start --quiet --pidfile $PIDFILE --startas $DAEMON -- $OPTIONS
+        echo "."
+        ;;
+  *)
+        echo "Usage: $SCRIPTNAME {start|stop|restart|reload|force-reload}" >&2
+        exit 1
+        ;;
+esac
+exit 0
+

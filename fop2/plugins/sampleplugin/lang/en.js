@@ -1,0 +1,2 @@
+lang['samplepluginstring']='Sample Text';
+

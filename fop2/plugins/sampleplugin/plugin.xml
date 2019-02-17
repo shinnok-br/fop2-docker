@@ -1,0 +1,19 @@
+<plugin>
+    <rawname>sampleplugin</rawname>
+    <name>Sample Plugin</name>
+    <version>1.0.0</version>
+    <description>This plugin includes all the hooks and interfaces you might need to use to create your own. You can use it as a base for writing a new/custom plugin.</description>
+    <description-es_ES>Este plugin incluye todos las interfaces y hooks necesarios que usted pueda necesitar para crear uss propios plugins. Se puede usar como base para escribir un plugin nuevo o personalizado.</description-es_ES>
+    <global>0</global>
+    <params>
+        <param>
+            <name>sampleConfig</name>
+            <type>string</type>
+            <multi>yes</multi>
+            <default>default</default>
+        </param>
+    </params>
+    <changelog>
+        *1.0.0*   Stable release
+    </changelog>
+</plugin>

@@ -1,0 +1,39 @@
+Plugins in FOP2 might have a unique name consisting on only alphanumeric 
+characters with no spaces. Its files should reside on a subdirectory with
+the same name as the plugin.
+
+It consists of several files, depending on the kind of actions you need
+the plugin to perform: a javascript file for elements/actions on the
+client side (browser), a perl file for server side actions, then .css
+files for styling, and language files in the lang subdirectory as you 
+will find in this sample plugin.
+
+It can also include an optional .ini file for storing configuration
+for the plugin. Ini files can be editted from the plugin section of
+the FOP2 Manager.
+
+The plugin definition is stored in the plugin.xml file that provides
+the raw name, full name, a description, version number, and config
+parameters if any.
+
+You can use this sample plugin as a base to write/start your own. 
+Each file is commented describing the API/Interfaces available and
+sample usage for them.
+
+In order to load a plugin, you must specify it in fop2.cfg as:
+
+plugin=sampleplugin:/path/to/plugins/sampleplugin
+
+You can then load/assign a plugin to a specific user in the user 
+line in fop2.cfg:
+
+user=100:password:all::sampleplugin
+
+
+IMPORTANT!
+----------
+The server side code of a plugin (.pl file) will work globally, for
+all users, regardless if it was assigned or not to a particular user
+in fop2.cfg
+
+
