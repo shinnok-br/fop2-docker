@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM alpine:3.8
 
 RUN apt-get update
 

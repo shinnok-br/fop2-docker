@@ -1,0 +1,172 @@
+For complete installation instructions, please go to 
+http://www.fop2.com/documentation.php
+
+
+UPGRADING FROM A PREVIOUS INSTALL
+---------------------------------
+
+Just untar the package and run "make". The installation will copy the 
+new files over, and it will preserve config files in place. It will also
+make a backup of every replaced file, appending a suffix like ~ (depends 
+on your distro)
+
+If you modify some stock .js , .html or .css files you might want to
+make a backup of them because they will be overwritten when upgrading.
+
+After updating the software, you will have to do some manual tweaking to 
+enable new features:
+
+
+* Visual Phonebook & Recording Interface
+
+!!This is only needed if you are upgrading from FOP 2.20 or older!!
+
+Since FOP 2.21, if you are using FreePBX, the database used for the
+phonebook and the recording interface is created in the "asterisk"
+database used by FreePBX itself. This has a number of advantages:
+there is no need to enter mysql credentials and the tables will be
+created automatically if they do not exists.
+
+The drawback is that you will need to migrate the table from your
+fop2 database to the asterisk database by yourself. It is not hard to 
+migrate the data from one database to the other, one way would be 
+to use the mysql command line client, for example:
+
+mysql -u root -p asterisk -e "insert into asterisk.visual_phonebook select * from fop2.visual_phonebook"
+
+The above command will query your existing fop2 visual_phonebook
+table and insert all the data into the same table in your asterisk
+database table.
+
+
+* FreePBX
+
+If using FreePBX, we supply a script that will update your dialplan
+by modifying your current 'extensions_override_freepbx.conf' and 
+creating a new file 'extensions_override_fop2.conf' with the needed
+modifications. 
+
+The script is located in /usr/local/fop2/generate_override_contexts.pl
+
+You can execute it with the -write command line option to alter your
+dialplan directly, or perform a dry run by using the -print option:
+
+#> /usr/local/fop2/generate_override_contexts.pl -write
+
+The above command will try to do all the work for you. As it is an
+automated script, and the world is large and unknown, it might fail.
+In that case you can restore your original file that is saved with the
+name /etc/asteirsk/extensions_override_freepbx.conf.bak
+
+There is also a file named FOP2Callbacks.pm in /usr/local/fop2 that 
+completes the integration. If you are NOT using FreePBX, you might 
+want to rename or remove FOP2Callbacks.pm or modify it to your needs.
+
+FreePBX Plugin:
+---------------
+
+The FreePBX Plugin was deprecated since FOP 2.28 in favor of an 
+integrated module for configuring users and permissions name
+FOP2 Manager, that is accessible by pointing your browser to
+http://your.server/fop2/admin .
+
+The login credentials will be inherited by the FreePBX ones if
+you run a FreePBX based system, otherwise the default user/pass
+is fop2admin/fop2admin, You can change that by editing the file
+/var/www/html/fop2/admin/config.php
+
+Non FreePBX:
+------------
+
+Call Parking:
+
+In order to park calls you have to add a special context to your dialplan:
+
+[fop2-park]
+exten => _X.,1,Set(ARRAY(RETURN_EXTENSION,RETURN_CONTEXT,PARKBUTTON)=${CUT(EXTEN,:,1)},${CUT(EXTEN,:,2)},${CUT(EXTEN,:,3)})
+exten => _X.,2,GotoIf($["${PARKBUTTON}" = "PARK/default"]?5)
+exten => _X.,3,GotoIf($["${PARKBUTTON}" = ""]?5)
+exten => _X.,4,Set(PARKINGLOT=${PARKBUTTON:5})
+exten => _X.,5,Park(,${RETURN_CONTEXT},${RETURN_EXTENSION},1,s)
+
+This context is already created when you run the generate_override_context.pl
+script at installation time.
+
+Park Button Definition:
+
+The autoconfiguration script will create the parking buttons itself. If 
+you do not use FreePBX, the correct PARK definition in buttons.cfg looks 
+like this:
+
+[PARK/default]
+type=park
+extension=700
+label=Parking 
+context=parkedcalls
+
+Where default is the parkinglot.
+
+
+Recommended Manager User for FOP2:
+----------------------------------
+
+If you use Asterisk 1.8 or above, you might want to create a user
+with EventFilters as shown below in /etc/asterisk/manager_custom.conf
+or similar:
+
+[fop2]
+secret = fop222
+deny = 0.0.0.0/0.0.0.0
+permit = 127.0.0.1/255.255.255.0
+read = all
+write = all
+writetimeout = 1000
+eventfilter=!Event: RTCP*
+eventfilter=!Event: VarSet
+eventfilter=!Event: Cdr
+eventfilter=!Event: DTMF
+eventfilter=!Event: AGIExec
+eventfilter=!Event: ExtensionStatus
+eventfilter=!Event: ChannelUpdate
+eventfilter=!Event: ChallengeSent
+eventfilter=!Event: SuccessfulAuth
+eventfilter=!Event: HangupRequest
+eventfilter=!Event: SoftHangupRequest
+eventfilter=!Event: NewAccountCode
+eventfilter=!Event: MusicOnHold
+eventfilter=!Event: LocalBridge 
+
+
+Sending SMS from FOP2:
+----------------------
+
+FOP2 can be used to send SMS directly from its Web GUI. Currently 
+FOP2 supports Khomp GSM boards (1), chan_dongle (2) and web based APIs
+to send SMS.
+
+In order to enable the SMS sending options, you should include the
+'sms' or 'smsmanager' permissions to the fop2 user. The first one lets
+a user send sms to the defined external number for any given extension,
+while the seconds shows a sms sending box that lets you enter any number
+to send sms to.
+
+1) http://www.khomp.com.br/?menu=produto&content=produtos&type=SPX&base=59
+   http://www.khomp.com.br/?menu=produto&content=produtos&type=SPX&base=64
+
+2) https://code.google.com/p/asterisk-chan-dongle/
+
+Credits
+-------
+Some Icons were taken from:
+
+Paomedia small-n-flat - http://paomedia.github.io/small-n-flat/ 
+Fugue Icon Set        - http://www.pinvoke.com/
+Silk Icon Set         - http://www.famfamfam.com/lab/icons/silk/
+Old School Icon Set   - http://freebiesdock.com/oldschool-icon-set/
+ComFi Telecom Icons   - http://www.comfi.com/telecom-icons
+
+Mute by Mete Eraydın from the Noun Project - https://thenounproject.com/
+Micons by Cosmin Negoita - http://geticonjar.com/freebies/231-micons/
+
+Sounds: http://www.narfstuff.co.uk/2009/09/13/royalty-free-ui-sound-pack-now-free/
+

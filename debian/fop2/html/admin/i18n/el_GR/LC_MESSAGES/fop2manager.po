@@ -1,0 +1,1265 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FOP2 Manager Greek translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-16 22:30+0100\n"
+"PO-Revision-Date: 2016-03-08 07:49+0200\n"
+"Last-Translator: Polychronis Porfyris <polihronis.porfiris@gmail.com>\n"
+"Language-Team: Polychronis Porfyris <polihronis.porfiris@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: el_GR\n"
+"X-Generator: Poedit 1.8.7\n"
+
+msgid "Field %s added to table %s"
+msgstr "Πεδίο %s προστέθηκε σε πίνακα %s"
+
+msgid "Add User"
+msgstr "Προσθήκη Χρήστη"
+
+msgid ""
+"From here you can manage FOP2 users and permissions, and also mark the "
+"groups the user will be able to view or the plugins it will have enabled."
+msgstr ""
+"Από εδώ μπορείτε να διαχειριστείτε τους χρήστες και τα δικαιώματα του FOP2, "
+"επίσης να ορίσετε ποιες ομάδες μπορεί να δει και πια πρόσθετα θα είναι "
+"ενεργά."
+
+msgid ""
+"From here you can install, uninstall, upload and configure FOP2 plugins. You "
+"can get plugins from FOP2 repositories, or upload and manage local plugins."
+msgstr ""
+"Από εδώ μπορείτε να  εγκαταστήσετε, καταργήσετε, ανεβάσετε και να ρυθμίσετε "
+"τα πρόσθετα του FOP2. Μπορείτε να αποκτήσετε πρόσθετα από της αποθήκες του "
+"FOP2, ή να ανεβάσετε και να διαχειριστείτε τοπικά πρόσθετα."
+
+msgid "Login Details"
+msgstr "Πληροφορίες Σύνδεσης"
+
+msgid "Group Details"
+msgstr "Πληροφορίες Ομάδας"
+
+msgid "Restricted Permission Details"
+msgstr "Πληροφορίες Περιορισμού Δικαιωμάτων"
+
+msgid "The extension number for this user."
+msgstr "Το εσωτερικό για αυτόν τον χρήστη."
+
+msgid "Extension"
+msgstr "Εσωτερικό"
+
+msgid ""
+"The secret to login to fop2. If the user was autocreated on install time, "
+"the password will be the voicemail pin, if it has no voicemail enabled, it "
+"will be the same extension number."
+msgstr ""
+"Ο κωδικός για εισόδου στο FOP2. Εάν δημιουργήθηκε αυτόματα κατά την "
+"εγκατάσταση, ο κωδικός θα είναι το ίδιο με την θυρίδα φωνητικού "
+"ταχυδρομείου, εάν δεν έχει ενεργό φωνητικό ταχυδρομείο, θα είναι το ίδιο με "
+"τον αριθμό του εσωτερικού."
+
+msgid "Secret"
+msgstr "Κωδικός"
+
+msgid ""
+"Choose a template to quickly set or change permissions, groups and plugins."
+msgstr ""
+"Επιλέξτε ένα πρότυπο για να ορίσετε ή να αλλάξετε γρήγορα τα δικαιώματα, τις "
+"ομάδες και τα πρόσθετα."
+
+msgid "User Preferences"
+msgstr "προτιμήσεις του χρήστη"
+
+msgid  "(pick one)"
+msgstr "(Επιλέξτε ένα)"
+
+msgid  "(pick group)"
+msgstr "(Επιλέξτε ομάδες)"
+
+msgid  "(pick plugin)"
+msgstr "(Επιλέξτε Πρόσθετα)"
+
+msgid "(pick template)"
+msgstr "(Επιλέξτε πρότυπο)"
+
+msgid "Restricted Permissions"
+msgstr "Περιορισμού Δικαιωμάτων"
+
+msgid "Permissions"
+msgstr "Δικαιώματα"
+
+msgid ""
+"Permissions let you specify what actions the user will be able to perform "
+"inside FOP2. For example, if you do not want to give the users the ability "
+"to listen to ongoing calls, do not select the spy permission."
+msgstr ""
+"Τα δικαιώματα σας επιτρέπουν να ορίζετε τι ενέργειες μπορεί να κάνει ο "
+"χρήστης εντός του FOP2. Για παράδειγμα, ένα δεν θέλετε να δώσετε την "
+"δυνατότητα στους χρήστες να ακούνε κλήσεις σε εξέλιξη, μην επιλέξετε το "
+"δικαίωμα spy."
+
+msgid "Template"
+msgstr "Πρότυπο"
+
+msgid "Choose the permission you want to grant to the user."
+msgstr "Επιλέξτε το δικαίωμα που θέλετε να χορηγήσετε στον χρήστη."
+
+msgid "(pick permission)"
+msgstr "(Επιλέξτε δικαίωμα)"
+
+msgid "Groups"
+msgstr "Ομάδες"
+
+msgid "Group"
+msgstr "Ομάδα"
+
+msgid ""
+"Select the groups you want the user to see in the panel. If no groups are "
+"selected the user will be able to see all buttons."
+msgstr ""
+"Επιλέξτε τις ομάδες που θέλετε να βλέπει ο χρήστης. Εάν καμιά ομάδα δεν "
+"είναι επιλεγμένη ο χρήστης θα βλέπει όλα τα κουμπιά."
+
+msgid "All Buttons"
+msgstr "Όλα τα κουμπιά"
+
+msgid "All Extensions"
+msgstr "Όλα τα εσωτερικά"
+
+msgid "All Queues"
+msgstr "Όλες οι ουρές"
+
+msgid "All Conferences"
+msgstr "Όλες οι διασκέψεις"
+
+msgid "All Trunks"
+msgstr "Όλοι οι κορμοί"
+
+msgid "Plugins"
+msgstr "Πρόσθετα"
+
+msgid "Select the plugins you want to load for this user."
+msgstr "Επιλέξτε τα πρόσθετα που θέλετε να φορτώσετε για τον χρήστη."
+
+msgid "Submit Changes"
+msgstr "Υποβολή αλλαγών"
+
+msgid "Delete User %s"
+msgstr "Διαγραφή χρήστη %s"
+
+msgid "Are you sure?"
+msgstr "Είστε σίγουροι;"
+
+msgid "Please insert an extension number."
+msgstr "Παρακαλώ εισάγετε έναν αριθμό εσωτερικού."
+
+msgid "The extension must be numeric."
+msgstr "Το εσωτερικό πρέπει να είναι αριθμητικό."
+
+msgid "That extension already exists."
+msgstr "Αυτό το εσωτερικό υπάρχει ήδη."
+
+msgid "Changes saved successfully"
+msgstr "Οι αλλαγές αποθηκεύτηκαν επιτυχώς"
+
+msgid "Users"
+msgstr "Χρήστες"
+
+msgid "Buttons"
+msgstr "Κουμπιά"
+
+msgid "Templates"
+msgstr "Πρότυπα"
+
+msgid "Extensions"
+msgstr "Εσωτερικά"
+
+msgid "Queues"
+msgstr "Ουρές"
+
+msgid "Trunks"
+msgstr "Κορμοί"
+
+msgid "Parks"
+msgstr "Parks"
+
+msgid "Conferences"
+msgstr "Διασκέψεις"
+
+msgid "Save"
+msgstr "Αποθήκευση"
+
+msgid "Upload"
+msgstr "Μεταφόρτωση"
+
+msgid "Edit button options"
+msgstr "Επεξεργασία επιλογών κουμπιού"
+
+msgid ""
+"You can change button labels and privacy options -to prevent the button to "
+"be monitored and/or hide the CallerID- among other things. You can also sort "
+"the list by dragging elements up and down or using the Sort options in the "
+"Actions menu."
+msgstr ""
+"Μπορείτε να αλλάξετε τις ετικέτες και τις επιλογές ιδιωτικότητας των "
+"κουμπιών – για να εμποδίσετε την παρακολούθηση του κουμπιού και/ή να κρύψετε "
+"την ταυτότητα καλούντος – μεταξύ άλλων. Μπορείτε να ταξινομήστε την λίστα "
+"σύροντας τα στοιχεία επάνω και κάτω ή χρησιμοποιώντας τις επιλογές "
+"ταξινόμησης του μενού ενεργειών."
+
+msgid "Sort by Name"
+msgstr "Ταξινόμηση κατά όνομα"
+
+msgid "Sort by Number"
+msgstr "Ταξινόμηση κατά αριθμό"
+
+msgid ""
+"If you changed any extension names and want to reread them from the regular "
+"FreePBX config and update the FOP2 config, click this button."
+msgstr ""
+"Πατήστε αυτό το κουμπί εάν θέλετε να ξανά διαβάσετε τις ρυθμίσεις από το "
+"FreePBX και να ενημερώσετε τις ρυθμίσεις του FOP2, σε περίπτωση που έχετε "
+"αλλάξει οποιοδήποτε όνομα εσωτερικού."
+
+msgid "Show/Hide advanced fields for buttons."
+msgstr "Εμφάνιση/Απόκρυψη προχωρημένων πεδίων κουμπιών."
+
+msgid "%d buttons removed from system update"
+msgstr "%d κουμπιών αφαιρέθηκαν από την ενημέρωση συστήματος"
+
+msgid "%d buttons added from system update"
+msgstr "%d κουμπιών προστέθηκαν την ενημέρωση συστήματος"
+
+msgid "%d buttons updated"
+msgstr "%d κουμπιών ενημερώθηκαν"
+
+msgid "Enable or disable this button from the FOP2 panel view."
+msgstr ""
+"Ενεργοποίηση ή απενεργοποίηση αυτού του κουμπιού από την προβολή του FOP2"
+
+msgid "You can change the button label to be displayed on FOP2 panel."
+msgstr ""
+"Μπορείτε να αλλάξετε την ετικέτα του κουμπιού που θα προβάλλετε στο FOP2."
+
+msgid ""
+"You can group extensions visually on FOP2 page. If no group is specified all "
+"the extensions are going to be displayed on the Extensions box. If you type "
+"another name, a new box will be added with the name you choose. Any buttons "
+"with the same group name will be displayed on that box."
+msgstr ""
+"Μπορείτε να ομαδοποιήσετε oυρές οπτικά στην σελίδα του FOP2. Εάν δεν "
+"έχει καθοριστεί ομάδα όλα τα oυρές θα εμφανίζονται στο πλαίσιο "
+"Ουρές. Εάν πληκτρολογήσετε ένα άλλο όνομα, ένα νέο πλαίσιο θα προστεθεί "
+"με αυτό το όνομα. Όποιο κουμπί έχει το ίδιο όνομα ομάδας θα εμφανιστεί σε "
+"αυτό το πλαίσιο."
+
+msgid ""
+"You can group queues visually on FOP2 page. If no group is specified all "
+"the queues are going to be displayed on the Queues box. If you type "
+"another name, a new box will be added with the name you choose. Any buttons "
+"with the same group name will be displayed on that box."
+msgstr ""
+"Μπορείτε να ομαδοποιήσετε εσωτερικά οπτικά στην σελίδα του FOP2. Εάν δεν "
+"έχει καθοριστεί ομάδα όλα τα εσωτερικά θα εμφανίζονται στο πλαίσιο "
+"Εσωτερικά. Εάν πληκτρολογήσετε ένα άλλο όνομα, ένα νέο πλαίσιο θα προστεθεί "
+"με αυτό το όνομα. Όποιο κουμπί έχει το ίδιο όνομα ομάδας θα εμφανιστεί σε "
+"αυτό το πλαίσιο."
+
+
+msgid ""
+"This option can be used to disable monitoring or CallerID display on the "
+"button."
+msgstr ""
+"Αυτή η επιλογή μπορεί να χρησιμοποιηθεί στην απενεργοποίηση της "
+"παρακολούθησης ή την εμφάνιση της ταυτότητας καλούντος στο κουμπί."
+
+msgid ""
+"ASTDB key to search for custom states. Default configuration is for "
+"displaying Call Forward Unconditional states."
+msgstr ""
+"Κλειδί ASTDB για την αναζήτηση προσαρμοσμένων καταστάσεων. Η προκαθορισμένη "
+"ρύθμιση είναι για την εμφάνιση καταστάσεων άμεσης εκτροπής κλήσεων."
+
+msgid ""
+"You can set an email for every button to enable the option to email the user "
+"directly from the FOP2 panel."
+msgstr ""
+"Μπορείτε να ορίσετε διεύθυνση ηλεκτρινού ταχυδρομείου για κάθε κουμπί, για "
+"να ενεργοποιηθεί η επιλογή αποστολής ηλεκτρονικών μηνυμάτων κατευθείαν στους "
+"χρήστες από τον FOP2."
+
+msgid ""
+"Channel to use as originator when performing a dial from FOP2. You can use a "
+"Local type channel and use sip headers for setting the phone to auto answer."
+msgstr ""
+"Το κανάλι που θα χρησιμοποιηθεί ως προέλευση όταν πραγματοποιείτε κλήση "
+"μέσου του FOP2. Μπορείτε να χρησιμοποιήστε ένα κανάλι τύπου Local και να "
+"χρησιμοποιήστε επικεφαλίδες SIP για ρυθμίστε την αυτόματη απάντηση του "
+"τηλεφώνου."
+
+msgid ""
+"number@context for external/mobile transfers. If @context is omited it will "
+"use the default one for the extension."
+msgstr ""
+"αριθμός@πλαίσιο για εξωτερικές/προς κινητά μεταβιβάσεις. Εάν το @πλαίσιο δεν "
+"οριστεί θα χρησιμοποιηθεί το προκαθορισμένο για το εσωτερικό."
+
+msgid ""
+"Options to pass to chanspy. Can be used to restrict spying to certain groups "
+"(option g, SPYGROUP) or silence the beep (option q). Example: qg(SALES)"
+msgstr ""
+"Παράμετροι που θα περαστούν στο chanspy. Μπορεί να χρησιμοποιηθεί για τον "
+"περιορισμό παρακολούθησης ορισμένων ομάδων (παράμετρος g(ΟΜΑΔΑ)) ή την "
+"σίγαση του ενδεικτικού τόνου (παράμετρος q). Παράδειγμα : qg(ΠΩΛΗΣΕΙΣ)."
+
+msgid ""
+"Extra Channel. You can use it to add extra channels to affect the status of "
+"this button."
+msgstr ""
+"Επιπλέον κανάλια. Μπορείτε να το χρησιμοποιήσετε για να προσθέσετε επιπλέον "
+"κανάλια που θα επηρεάζουν την κατάσταση του κουμπιού."
+
+msgid ""
+"Comma separated lists of tags. They will be searched/matched when you use "
+"the Filter input box on the panel."
+msgstr ""
+"Λίστες ετικετών διαχωρισμένες με κόμματα. Θα αναζητηθούν/ταιριαστούν όταν "
+"χρησιμοποιείτε το πλαίσιο φιλτραρίσματος στον πίνακα."
+
+msgid "Zap/Dahdi Channels (Eg: 1-24)"
+msgstr "Κανάλι ZAP/DAHDI (π.χ. 1-24)"
+
+msgid ""
+"You must specify the channel number range for zap/dahdi trunks in this field."
+msgstr ""
+"Πρέπει να ορίσετε το εύρος καναλιών για κορμούς ZAP/DAHDI σε αυτό το πεδίο"
+
+msgid "Extra Channel"
+msgstr "Επιπλέον κανάλι"
+
+msgid ""
+"You might want to specify an additional device name or put the correct "
+"device name in case you are using custom trunks."
+msgstr ""
+"Μπορεί να θέλετε να ορίσετε συγκεκριμένο όνομα συσκευής ή να ορίσετε το "
+"σωστό όνομα συσκευής σε περίπτωση που χρησιμοποιείτε ειδικούς κορμούς."
+
+msgid ""
+"Channel to use as queue member when adding/removing/pausing this button into "
+"a queue."
+msgstr ""
+"Το κανάλι που θα χρησιμοποιηθεί ως μέλος ουράς όταν προστίθεται/καταργείται/"
+"παύεται αυτό το κουμπί σε μια ουρά."
+
+msgid "Voicemail mailbox to query for new voicemail."
+msgstr "Θυρίδα φωνητικού ταχυδρομείου για αναζήτηση νέων φωνητικών μηνυμάτων."
+
+msgid "Saving..."
+msgstr "Αποθήκευση..."
+
+msgid "Label"
+msgstr "Ετικέτα"
+
+msgid "Synchronize Labels"
+msgstr "Συγχρονισμός ετικετών"
+
+msgid "No"
+msgstr "Όχι"
+
+msgid "Yes"
+msgstr "Ναι"
+
+msgid "Enabled"
+msgstr "Ενεργοποιημένο"
+
+msgid "Privacy"
+msgstr "Ιδιωτικότιτα"
+
+msgid "Email"
+msgstr "Ηλεκτρονικό ταχυδρομείο"
+
+msgid "External Transfer"
+msgstr "Εξωτερική μεταβίβαση"
+
+msgid "Channel"
+msgstr "Κανάλι"
+
+msgid "Originate Channel"
+msgstr "Κανάλι Προέλευσης"
+
+msgid "Tags"
+msgstr "Ετικέτες"
+
+msgid "Custom ASTDB"
+msgstr "Προσαρμοσμένο ASTDB"
+
+msgid "ChanSpy Options"
+msgstr "Επιλογές ChanSpy"
+
+msgid "Add Group"
+msgstr "Προσθήκη ομάδας"
+
+msgid ""
+"Groups can be used to restrict the buttons a user should see in his panel. "
+"You can create a group with only 5 extensions and assign it to a user in the "
+"Users tab, so he can only see those extensions."
+msgstr ""
+"Οι ομάδες μπορούν να χρησιμοποιηθούν στο να περιορίσετε ποια κουμπιά θα "
+"βλέπει ο χρήστης στον πινάκα του. Μπορείτε να δημιουργήσετε μια ομάδα με 5 "
+"εσωτερικά μόνο και να το ορίσετε σε έναν χρήστη στην καρτέλα χρηστών, έτσι ο "
+"χρήστης θα βλέπει μόνο αυτά τα εσωτερικά."
+
+msgid "Name"
+msgstr "Όνομα"
+
+msgid "Included Buttons"
+msgstr "Συμπεριλαμβανόμενα κουμπιά"
+
+msgid "Select the buttons you want to include in this group."
+msgstr "Επιλέξτε τα κουμπιά που θέλετε να συμπεριλάβετε σε αυτήν την ομάδα."
+
+msgid "Check All"
+msgstr "Επιλογή όλων"
+
+msgid "Delete Group %s"
+msgstr "Διαγραφή ομάδας %s"
+
+msgid "Edit User %s"
+msgstr "Επεξεργασία χρήστη %s"
+
+msgid "Edit Group %s"
+msgstr "Επεξεργασία ομάδας %s"
+
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+msgid "Please enter a group name."
+msgstr "Παρακαλώ εισάγετε ένα όνομα ομάδας."
+
+msgid "Ringgroups"
+msgstr "Ομάδες Κουδουνισμού"
+
+msgid ""
+"A template is a set of permissions, groups and plugins that you can assign "
+"to users in one step inside the Users menu for easy and quick management."
+msgstr ""
+"Ένα πρότυπο είναι μια σειρά από δικαιώματα, ομάδες και πρόσθετε που μπορείτε "
+"να ορίσετε στους χρήστες σε μια κίνηση μέσα από το μενού χρηστών για γρήγορη "
+"και εύκολη διαχείριση."
+
+msgid "Add Template"
+msgstr "Προσθήκη προτύπου"
+
+msgid "Edit Template %s"
+msgstr "Επεξεργασία προτύπου %s"
+
+msgid "Template Details"
+msgstr "Πληροφορίες προτύπου"
+
+msgid "Template %s deleted!"
+msgstr "Το πρότυπο %s διαγράφτηκε!"
+
+msgid "Template %s inserted!"
+msgstr "Το πρότυπο %s προστέθηκε!"
+
+msgid "User %s deleted!"
+msgstr "Ο χρήστης %s διαγράφτηκε!"
+
+msgid "User %s inserted!"
+msgstr "Ο χρήστης %s προστέθηκε!"
+
+msgid "Group %s deleted!"
+msgstr "Η ομάδα %s διαγράφτηκε!"
+
+msgid "Group %s inserted!"
+msgstr "Η ομάδα %s προστέθηκε!"
+
+msgid "Restricted Permission %s deleted!"
+msgstr "Διαγράφτηκε ο περιορισμός δικαιωμάτων %s!"
+
+msgid "Restricted Permission %s inserted!"
+msgstr "Εισήχθηκε ο περιορισμός δικαιωμάτων %s!"
+
+msgid "Delete Template %s"
+msgstr "Διαγραφή προτύπου %s"
+
+msgid "Delete Restricted Permission %s"
+msgstr "Να διαγραφτεί ο περιορισμός δικαιωμάτων %s"
+
+msgid ""
+"Select the groups you want to add to this template. If no groups are "
+"selected the user will be able to see all buttons."
+msgstr ""
+"Επιλέξτε τις ομάδες που θέλετε να προσθέστε σε αυτό το πρότυπο. Εάν καμιά "
+"ομάδα δεν είναι επιλεγμένη ο χρήστης θα βλέπει όλα τα κουμπιά."
+
+msgid "Select the plugins you want to enable in this template."
+msgstr "Επιλέξτε τα πρόσθετα που θέλετε να ενεργοποιήσετε σε αυτό το πρότυπο."
+
+msgid "Make Default"
+msgstr "Προεπιλεγμένο"
+
+msgid "Assign this template by default when adding new users."
+msgstr ""
+"Ορισμός αυτού του προτύπου ως προεπιλογή κατά την προσθήκη νέων χρηστών."
+
+msgid "The name for this template."
+msgstr "Το όνομα για αυτό το πρότυπο."
+
+msgid "Choose the permission you wish to include in this template."
+msgstr "Επιλέξτε το δικαίωμα που θέλετε να συμπεριλάβετε σε αυτό το πρότυπο."
+
+msgid "The name for this group."
+msgstr "Το όνομα για αυτήν την ομάδα."
+
+msgid "Add Restricted Permission"
+msgstr "Προσθήκη περιορισμού δικαιωμάτων"
+
+msgid ""
+"Restricted permissions lets you limit actions to a specific set of "
+"extensions/groups. They are only used for restricting actions. If you want a "
+"quick way to assign permissions, then you should use Templates as restricted "
+"permissions will limit user actions."
+msgstr ""
+"Οι περιορισμοί δικαιωμάτων σας επιτρέπουν να περιορίσετε τις ενεργές σε "
+"συγκεκριμένα εσωτερικά/ομάδες. Χρησιμοποιούνται μόνο για περιορισμό "
+"ενεργειών. Εάν θέλετε ένα γρήγορο τρόπο για να ορίσετε δικαιώματα, τότε να "
+"χρησιμοποιήστε Πρότυπα καθώς οι περιορισμοί δικαιωμάτων θα περιορίσουν τις "
+"ενέργειες των χρηστών."
+
+msgid "Edit Restricted Permission %s"
+msgstr "Επεξεργασία περιορισμού δικαιωμάτων %s"
+
+msgid "The name for this permission."
+msgstr "Το όνομα για αυτό το δικαίωμα."
+
+msgid "Choose the permission you want to include in this advanced permission."
+msgstr ""
+"Επιλέξτε το δικαίωμα που θέλετε να συμπεριληφθεί σε αυτό το προχωρημένο "
+"δικαίωμα."
+
+msgid "Restrict to Groups"
+msgstr "Περιορισμός σε ομάδες"
+
+msgid ""
+"Select the groups you want to restrict this permission to. You will be able "
+"to perform the actions only to the extension/buttons that are part of the "
+"selected groups. If no groups are selected, the permission will be allowed "
+"to every button on the panel."
+msgstr ""
+"Επιλέξτε τις ομάδα που θέλετε να εφαρμοστεί ο περιορισμός δικαιώματος. Θα "
+"μπορέσετε να εκτελέστε τις ενέργειες μόνο στα εσωτερικά/κουμπιά που είναι "
+"μέλη των επιλεγμένων ομάδων. Εάν δεν υπάρχουν επιλεγμένες ομάδες, τα "
+"δικαιώματα θα επιτρέπονται σε όλα τα κουμπιά του πίνακα."
+
+msgid "Please insert a permission name."
+msgstr "Παρακαλώ εισάγετε ένα όνομα δικαιωμάτων."
+
+msgid "That name is reserved for stock permissions, choose another one."
+msgstr ""
+"Αυτό το όνομα είναι δεσμευμένο για ενσωματωμένα δικαιώματα, επιλέξτε κάποιο "
+"άλλο."
+
+msgid "Accept"
+msgstr "Αποδοχή"
+
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+msgid "The following error(s) occurred processing the uploaded file: %s"
+msgstr ""
+"Το παρακάτω σφάλμα παρουσιάστηκε κατά την επεξεργασία του μεταφορτωμένου "
+"αρχείου %s"
+
+msgid ""
+"Plugin installed successfully. You need to enable it globally or assign it "
+"to some users to make it available."
+msgstr ""
+"Το πρόσθετο εγκαταστάθηκε με επιτυχία. Θα πρέπει να το ενεργοποιήσετε ευρέος "
+"ή να το ορίσετε σε μερικούς χρήστες για να είναι διαθέσιμο."
+
+msgid "FOP2 Repository - Available Plugins"
+msgstr "Αποθήκη FOP2 – Διαθέσιμα πρόσθετα"
+
+msgid "Globally Enabled"
+msgstr "Ευρέως ενεργοποιημένο"
+
+msgid "Uninstall"
+msgstr "Κατάργηση"
+
+msgid "Install"
+msgstr "Εγκατάσταση"
+
+msgid "Buy"
+msgstr "Αγορά"
+
+msgid "Update"
+msgstr "Ενημέρωση"
+
+msgid "Free"
+msgstr "Δωρεάν"
+
+msgid "Online Repository not reachable/accessible"
+msgstr "Η διαδικτυακή αποθήκη δεν είναι προσβάσιμη/διαθέσιμη"
+
+msgid "Locally Available Plugins"
+msgstr "Τοπικά διαθέσιμα πρόσθετα"
+
+msgid "Upload Plugin"
+msgstr "Μεταφόρτωση προσθέτου"
+
+msgid ""
+"You can upload a tar gzip file containing a FOP2 plugin from your local "
+"system. If a plugin with the same name already exists, it will be "
+"overwritten."
+msgstr ""
+"Μπορείτε να μεταφορτώσετε ένα αρχείο tar gzip από το τοπικό σας σύστημα που "
+"περιέχει ένα πρόσθετο του FOP2. Σε περίπτωση που υπάρχει ήδη ένα πρόσθετο με "
+"το ίδιο όνομα, θα αντικατασταθεί."
+
+msgid "Available Version"
+msgstr "Διαθέσιμη έκδοση"
+
+msgid "Installed Version"
+msgstr "Εγκαταστημένη έκδοση"
+
+msgid "Browse"
+msgstr "Αναζήτηση"
+
+msgid "Welcome"
+msgstr "Καλωσορίσατε"
+
+msgid "Error extracting plugin archive"
+msgstr "Σφάλμα κατά την εξαγωγή του προσθέτου"
+
+msgid "Hide/Show Plugin Settings"
+msgstr "Εμφάνιση/Απόκρυψη ρυθμίσεων προσθέτου"
+
+msgid "Settings"
+msgstr "Επιλογές"
+
+msgid "Add Section"
+msgstr "Προσθήκη τομέα"
+
+msgid "Remove Section"
+msgstr "Κατάργηση τομέα"
+
+msgid "Please wait..."
+msgstr "Παρακαλώ περιμένετε…"
+
+msgid "Enter Section"
+msgstr "Εισαγωγή τομέα"
+
+msgid "That section already exists!"
+msgstr "Αυτός ο τομέας υπάρχει ήδη!"
+
+msgid "Section cannot be empty!"
+msgstr "Ο τομέας δεν μπορεί να είναι άδειος!"
+
+msgid "%s users added"
+msgstr "%s χρήστες προστέθηκαν"
+
+msgid "%s buttons added"
+msgstr "%s κουμπιά προστέθηκαν"
+
+msgid "Configuration saved"
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν"
+
+msgid ""
+"Error finding uploaded file. Did you select one? Check your PHP and/or web "
+"server configuration."
+msgstr ""
+"Σφάλμα κατά την αναζήτηση του μεταφορτωμένου αρχείου. Επιλέξατε ένα; Ελέγξτε "
+"τις ρυθμίσεις του PHP ή/και του διακομιστή ιστοσελίδων."
+
+msgid "File must be in tar+gzip (.tgz or .tar.gz) format"
+msgstr "Το αρχείο πρέπει να είναι τύπου tar+gzip (.tgz ή .tar.gz)"
+
+msgid ""
+"Filename does not have the correct format: it must be pluginname-version.tar."
+"gz (eg. customplugin-0.1.tar.gz)"
+msgstr ""
+"Το όνομα του αρχείου δεν ηχεί την σωστή διαμόρφωση. Πρέπει να είναι "
+"όνομα_προσθέτου-έκδοση.tar.gz (π.χ. customplugin-0.1.tar.gz)"
+
+msgid "FOP2 Server is not responding. Be sure the service is running!"
+msgstr "Ο διακομιστής FOP2 δεν ανταποκρίνεται. Έλεγξε ότι η υπηρεσία τρέχει!"
+
+msgid "Licensed Plugins"
+msgstr "Αδειοδοτημένα πρόσθετα"
+
+msgid "There are no licensed plugins"
+msgstr "Δεν υπάρχουν αδειοδοτημένα πρόσθετα"
+
+msgid "FOP2 Server Status: OK"
+msgstr "Κατάσταση διακομιστή FOP2: Εντάξει"
+
+msgid ""
+"The FOP2 Manager lets you configure users, permissions, button details and "
+"options. It will also let you install, uninstall and configure FOP2 plugins. "
+"It will read data from your configuration backend (FreePBX, Thirdlane, etc) "
+"and populate its own tables with your preferences."
+msgstr ""
+"Ο διαχειριστής FOP2 σας επιτρέπει να ρυθμίσετε χρήστες, δικαιώματα, "
+"λεπτομέρειες κουμπιών και επιλογές. Θα σας επιτρέψει επίσης να "
+"εγκαταστήσετε, καταργήσετε και να ρυθμίσετε πρόσθετα του FOP2. Θα διαβάσει "
+"δεδομένα από την οπίσθια μηχανή σας (FreePBX, Thirdlane, κτλ) και θα "
+"φορτώσει τους δικούς του πίνακες με τις προτιμήσεις σας."
+
+msgid "Close"
+msgstr "Κλείσιμο"
+
+msgid "Upgrade Available"
+msgstr "Διαθέσιμη αναβάθμιση"
+
+msgid "Upgrade"
+msgstr "Αναβάθμισε"
+
+msgid "New %s version %s available for download"
+msgstr "%s νέα έκδοση %s διαθέσιμη για κατέβασμα"
+
+msgid "(Your current version is %s)"
+msgstr "(Η τρέχουσα έκδοση σας είναι %s)"
+
+msgid "FOP2 Reloaded"
+msgstr "Επαναφορτώθηκε το FOP2"
+
+msgid "Reload FOP2"
+msgstr "Επαναφόρτωση του FOP2"
+
+msgid "Asterisk Reloaded"
+msgstr "Επαναφορτώθηκε ο Asterisk"
+
+msgid "Reload Asterisk"
+msgstr "Επαναφόρτωση του Asterisk"
+
+msgid "Show Changelog"
+msgstr "Εμφάνιση αρχείου αλλαγών"
+
+msgid "Hide Changelog"
+msgstr "Απόκρυψη αρχείου αλλαγών"
+
+msgid "File extracted successfully!"
+msgstr "Η εξαγωγή του αρχείου έγινε με επιτυχία!"
+
+msgid "Cannot read file %s for extraction"
+msgstr "Δεν είναι δυνατή η ανάγνωση του αρχείου %s για εξαγωγή"
+
+msgid "Extraction directory %s does not exists!"
+msgstr "Ο κατάλογος εξαγωγής %s δεν υπάρχει!"
+
+msgid "Error while extracting file %s into directory %s"
+msgstr "Σφάλμα κατά την εξαγωγή του αρχείου %s στον κατάλογο %s"
+
+msgid ""
+"Problem trying to find the extracted upgrade files. There is no %s directory."
+msgstr ""
+"Παρουσιάστηκε πρόβλημα κατά την αναζήτηση των εξαγομένων αρχείων "
+"αναβάθμισης. Ο κατάλογος %s δεν υπάρχει."
+
+msgid "The permission name is already in use."
+msgstr "Το όνομα των δικαιωμάτων χρησιμοποιείτε ήδη."
+
+msgid "The template name is already in use."
+msgstr "Το όνομα του προτύπου χρησιμοποιείτε ήδη."
+
+msgid "The name cannot be empty!"
+msgstr "Το όνομα δεν μπορεί να είναι άδειο!"
+
+msgid "The user number is already in use."
+msgstr "Ο αριθμός χρήστη χρησιμοποιείτε ήδη."
+
+msgid "Create option"
+msgstr "Δημιουργία επιλογής"
+
+msgid "Price"
+msgstr "Τιμή"
+
+msgid "Backend Engine: %s"
+msgstr "Οπίσθια μηχανή: %s"
+
+msgid "Language"
+msgstr "Γλώσσα"
+
+msgid "User"
+msgstr "Χρήστης"
+
+msgid "Password"
+msgstr "Κωδικός"
+
+msgid "Log in"
+msgstr "Σύνδεση"
+
+msgid "Invalid Credentials"
+msgstr "Σφαλμένα διαπιστευτήρια"
+
+msgid "Actions"
+msgstr "Ενέργειες"
+
+msgid "That name is reserved for default groups, choose another one."
+msgstr ""
+"Αυτό το όνομα είναι δεσμευμένο για προκαθορισμένες ομάδες, επιλέξτε κάποιο "
+"άλλο."
+
+msgid "Logout"
+msgstr "Αποσύνδεση"
+
+msgid "Recreate Users"
+msgstr "Επαναδημιουργία χρηστών"
+
+msgid ""
+"Variable to send to the Asterisk Manager when issuing Originate commands "
+"specific for setting a phone to auto answer via sip headers or similar. This "
+"will be used if the user toggles auto answer in its own FOP2 Preferences "
+"setting"
+msgstr ""
+"Μεταβλητές που θα αποσταλούν στον Διαχωριστή Asterisk κατά την έκδοση "
+"εντολών προέλευσης, ειδικά για να ορίσουμε ένα τηλέφωνο να απαντήσει "
+"αυτόματα μέσου επικεφαλίδων SIP ή κάτι παρόμοιο. Αυτό θα χρησιμοποιηθεί εάν "
+"ο χρήστης ενεργοποίηση την επιλογή αυτόματη απάντηση στις επιλογές του δικού "
+"του πίνακα FOP2."
+
+msgid ""
+"Variables to send to the Asterisk Manager when issuing Originate commands "
+"(performing a dial from FOP2)."
+msgstr ""
+"Μεταβλητές που θα αποσταλούν στον Διαχωριστή Asterisk κατά την έκδοση "
+"εντολών προέλευσης (πραγματοποιώντας μια κλήση μέσου του πίνακα FOP2)."
+
+msgid "Originate Variables"
+msgstr "Μεταβλητές προέλευσης"
+
+msgid "AutoAnswer Header"
+msgstr "Κεφαλίδα αυτόματης απάντησης"
+
+msgid "Could not remove file %s!"
+msgstr "Δεν μπόρεσα να αφαιρέσω το αρχείο %s!"
+
+msgid "File %s removed successfully"
+msgstr "Το αρχείο %s αφαιρέθηκε με ευτυχία"
+
+msgid "Edit Setting"
+msgstr "Επεξεργασία επιλογής"
+
+msgid "Enable javascript debugging on the browser."
+msgstr ""
+"Ενεργοποιήσετε τη JavaScript για τον εντοπισμό σφαλμάτων στο πρόγραμμα "
+"περιήγησης."
+
+msgid ""
+"To enable or disable desktop notifications (notification boxes that popup "
+"outside the browser, so you can see them with the browser minimized). This "
+"does not work with all browsers."
+msgstr ""
+"Για να ενεργοποιήσετε ή να απενεργοποιήσετε τις ειδοποιήσεις επιφάνειας "
+"εργασίας (κουτάκια ειδοποιήσεων που εμφανίζονται εκτός του περιηγητή, για να "
+"τα βλέπετε όταν ο περιηγητής είναι ελαχιστοποιημένος). Αυτό δεν δουλεύει με "
+"όλους τους περιηγητές."
+
+msgid ""
+"Dial prefix to use on click to call from phonebook or when using the dial "
+"box."
+msgstr ""
+"Το πρόθεμα κλήσεως που θα χρησιμοποιηθεί στον τηλεφωνικό κατάλογο κατά την "
+"διαδικασία πάτα για να καλέσεις ή όταν χρησιμοποιείτε το κουτί κλήσης."
+
+msgid ""
+"To enable or disable the 'Other' option on the FOP2 Presence selection, that "
+"lets users chose the reason for their state besides the predefined ones."
+msgstr ""
+"Για να ενεργοποιήσετε ή να απενεργοποιήσετε την επιλογή Άλλο του πλαισίου "
+"παρουσίας του FOP2, αυτό επιτρέπει στους χρήστες να επιλέγουν την αιτία της "
+"κατάστασης τους εκτός από τις προκαθορισμένες."
+
+msgid ""
+"When you click on a queue button, the extension display will hide all "
+"extensions but the ones matching their names with its queue members. If this "
+"is enabled, then queue filtering won't be active."
+msgstr ""
+"Όταν πατήστε ένα κουμπί ουράς, η προβολή εσωτερικών θα κρύψει όλα τα "
+"εσωτερικά εκτός από αυτά που ταιριάζουν με τα ονόματα μελών της ουράς. Εάν "
+"ενεργοποιηθεί αυτό, το φιλτράρισμα ουράς δεν θα είναι ενεργοποιημένο."
+
+msgid ""
+"Lets you control if you want to enable or disable the Voicemail Explorer "
+"feature. Requires a voicemail license to be effective."
+msgstr ""
+"Σας επιτρέπει να ελέγξετε εάν θέλετε να ενεργοποιήσετε ή να απενεργοποιήσετε "
+"την δυνατότητα εξερεύνησης φωνητικών μηνυμάτων. Απαιτείται άδεια φωνητικών "
+"μηνυμάτων για να έχει αποτέλεσμα."
+
+msgid ""
+"Lets you disable the use of HTML5 Websocket as the communications protocol. "
+"If disable FOP2 will use Adobe Flash instead."
+msgstr ""
+"Σας επιτρέπει να απενεργοποιήσετε την δικτυακή υποδοχή HTML5 ως πρωτόκολλο "
+"επικοινωνίας. Εάν απενεργοποιηθεί το FOP2 θα χρησιμοποιήσει το Adobe Flash."
+
+msgid ""
+"Mode in which you want queue buttons to be displayed by default. The summary "
+"view will show only the number of logged in agents and number of waiting "
+"calls, while the full view will show every queue member and all waiting "
+"calls in detail."
+msgstr ""
+"Την μορφή που θέλετε να εμφανίζονται εξορισμού τα κουμπιά ουράς. Η προβολή "
+"περίληψης θα εμφανίζει μόνο τον αριθμό των ενεργών εκπροσώπων και τον αριθμό "
+"των κλήσεων σε αναμονή, σε αντίθετη περίπτωση η πλήρες προβολή θα εμφανίζει "
+"όλα τα μέλη της ουράς και όλες οι κλήσεις σε αναμονή λεπτομερώς."
+
+msgid ""
+"When enabled, extension buttons won't show any inactive lines, making them "
+"shorter. But also the display will be irregular as some buttons will be "
+"taller than others depending on the number of active lines."
+msgstr ""
+"Όταν είναι ενεργοποιημένο, τα κουμπιά των εσωτερικών δεν θα προβάλουν τα μη "
+"ενεργά κανάλια τους, κάνοντας τα πιο κοντά. Αλλά επίσης η απεικόνιση θα "
+"είναι ακανόνιστη καθώς μερικά κουμπιά θα είναι πιο ψηλά από τα άλλα ανάλογα "
+"με το πόσα ενεργά κανάλια έχουν."
+
+msgid ""
+"This setting lets you control if you want drag&drop transfers to be enabled "
+"in FOP2."
+msgstr ""
+"Αυτή η επιλογή σας επιτρέπει να ελέγχετε εάν θέλετε μεταφορές σύρε και άσε "
+"να είναι ενεργοποιημένες στον πίνακα FOP2."
+
+msgid ""
+"When enabled, this option will hide all extension buttons that are lagged or "
+"unregistered."
+msgstr ""
+"Όταν είναι ενεργοποιημένο, αυτή η επιλογή θα κρύψει όλα τα κουμπιά των "
+"εσωτερικών που είναι σε καθυστέρηση ή είναι αδήλωτα."
+
+msgid "Main Language"
+msgstr "Κύρια γλώσσα"
+
+msgid ""
+"URL to use when the logout button is clicked in the FOP2 UI. Useful if you "
+"are embedding FOP2 into some other web application and want to control what "
+"to show on logout."
+msgstr ""
+"URL που θα χρησιμοποιηθεί όταν πατηθεί το κουμπί της αποσύνδεσης στον πίνακα "
+"FOP2. Χρήσιμο όταν ενσωματώνετε το FOP2 σε άλλη δικτυακή εφαρμογή και θέλετε "
+"να ελέγχετε τι θα εμφανίζετε κατά την αποσύνδεση."
+
+msgid ""
+"If you do not want to show the extension number in a button label, then "
+"enable this setting."
+msgstr ""
+"Ενεργοποιήστε αυτήν την επιλογή εάν δεν θέλετε να εμφανίζετε ο αριθμός του "
+"εσωτερικού στην ετικέτα ενός κουμπιού."
+
+msgid "Duration in seconds you want notifications to be displayed."
+msgstr "Διάρκεια σε δευτερόλεπτα που θέλετε να εμφανίζονται οι ειδοποιήσεις."
+
+msgid "Date format to use on Chat events."
+msgstr "Μορφή ημερομηνίας που θα χρησιμοποιείτε στα συμβάντα ομιλίας."
+
+msgid "Number of lines to show per button."
+msgstr "Αριθμός γραμμών που θα εμφανίζονται ανά κουμπί."
+
+msgid "To control if you want sounds for chat events."
+msgstr "Για να ελέγχετε εάν θέλετε ήχους στα συμβάντα ομιλίας."
+
+msgid "To control if you want sounds for queue events."
+msgstr "Για να ελέγχετε εάν θέλετε ήχους στα συμβάντα ουράς."
+
+msgid ""
+"To enable or disable the RING sound when your extension receives a call."
+msgstr ""
+"Για να ενεργοποιήσετε ή να απενεργοποιήσετε τον ήχο κουδουνισμού όταν το "
+"εσωτερικό σας δεχτεί μια κλήση."
+
+msgid ""
+"With this setting, all extension buttons will start in unregistered state "
+"(greyed out)."
+msgstr ""
+"Με αυτή την επιλογή όλα τα κουμπιά των εσωτερικών θα ξεκινήσουν στην αδήλωτη "
+"κατάσταση (γκριζομένα)."
+
+msgid ""
+"Format in which voicemail files are stored, this must be the same as "
+"configured in /etc/asterisk/voicemail.conf"
+msgstr ""
+"Μορφή στην οποία θα αποθηκεύονται τα αρχεία των φωνητικών μηνυμάτων, αυτό "
+"πρέπει να ταιριάζει με την αντίστοιχη επιλογή που βρίσκετε στο αρχείο /etc/"
+"asterisk/voicemail.conf"
+
+msgid ""
+"To control if you want a warning when the FOP2 page is about to be closed."
+msgstr ""
+"Για να ελέγχετε εάν θέλετε προειδοποίηση όταν η σελίδα του FOP2 πάει να "
+"κλείσει."
+
+msgid ""
+"To control if you want a confirmation when a hangup action is performed from "
+"FOP2."
+msgstr ""
+"Για να ελέγχετε εάν θέλετε επιβεβαίωση όταν πραγματοποιείτε ενέργεια "
+"τερματισμού κλήσεως από τον πίνακα FOP2."
+
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgid "Mass Update"
+msgstr "Μαζική ενημέρωση"
+
+msgid "Mass Update via CSV File"
+msgstr "Μαζική ενημέρωση μέσου αρχείου CSV"
+
+msgid ""
+"Select a CSV file to upload with data to perform the mass update. You must "
+"pass an extension field in the CSV file to match against the Button "
+"extension. For example:"
+msgstr ""
+"Επιλέξτε ένα αρχείο CSV με δεδομένα για μεταφόρτωση για να πραγματοποιήσετε "
+"μαζική ενημέρωση. Πρέπει να περάσετε ένα πεδίο εσωτερικών στο αρχείο CSV που "
+"θα αντιστοιχηθεί με το εσωτερικό του κουμπιού. Για παράδειγμα:"
+
+msgid ""
+"Please assign fields for your CSV file columns. The extension field is "
+"mandatory and will be used to match the corresponding extension in the FOP2 "
+"Buttons list. Columns with no assigned field will be discarded."
+msgstr ""
+"Παρακαλώ αντιστοιχίστε πεδία για τις στήλες του αρχείου CSV σας. Το πεδίο "
+"εσώτερο είναι υποχρεωτικό και θα χρησιμοποιηθεί στο να ταιριάξει το "
+"αντίστοιχο εσωτερικό στην λίστα κουμπιών του FOP2. Στήλες χωρίς αντιστοίχιση "
+"θα αγνοηθούν."
+
+msgid "Empty file?"
+msgstr "Άδειασμα αρχείου;"
+
+msgid "Could not copy uploaded file"
+msgstr "Δεν μπόρεσα να αντιγράψω το μεταφορτωμένο  αρχείο"
+
+msgid "Could not upload file"
+msgstr "Δεν μπόρεσα να μεταφορτώσω το αρχείο"
+
+msgid "Please assing data columns"
+msgstr "Παρακαλώ ορίστε στήλες δεδομένων"
+
+msgid "Please assign the extension field to a column"
+msgstr "Παρακαλώ ορίστε το πεδίο εσωτερικού σε μια στήλη"
+
+msgid "Tenants"
+msgstr "Ένοικοι"
+
+msgid "Version"
+msgstr "Έκδοση"
+
+msgid "Dashboard"
+msgstr "Ταμπλό"
+
+
+msgid "Preferences"
+msgstr "Προτιμησεις"
+
+msgid "Sounds"
+msgstr "Ηχοι"
+
+msgid "Chat Sounds"
+msgstr "Ηχοι Chat"
+
+msgid "Queue Sounds"
+msgstr "Ηχοι Ουρας"
+
+msgid "Ring Sounds"
+msgstr "Ηχοι κλησης"
+
+msgid "Display"
+msgstr "Εμφανιση"
+
+msgid "Default Queue View"
+msgstr "Βασικη εμφανιση ουρας"
+
+msgid "Dynamic Line Display"
+msgstr "Δυναμικη εμφανιση καταστασης"
+
+msgid "Popup"
+msgstr "Popup"
+
+msgid "Automatic Popup"
+msgstr "Auto Popup"
+
+msgid "Notify Duration"
+msgstr "Ενημερωση Διαρκειας"
+
+msgid "Url"
+msgstr "Url"
+
+msgid "Phone"
+msgstr "Τοηλέφωνο"
+
+msgid "Auto Answer"
+msgstr "Δυτόματη Δπάντηση"
+
+msgid "Summary"
+msgstr "Περιληψη"
+
+msgid "Detailed"
+msgstr "Αναλυτικα"
+
+msgid "PHP SQLite module not installed"
+msgstr "PHP SQLite Δεν έχει εγκατασταθεί"
+
+msgid "You must install the SQLite module for PHP if you want to change/set global settings and user preferences from this tool."
+msgstr "Πρέπει να εγκαταστήσετε τη μονάδα SQLite για την PHP, εάν θέλετε να αλλάξετε / ορίσετε τις συνολικές ρυθμίσεις και τις προτιμήσεις χρήστη από αυτό το εργαλείο."
+
+msgid "Add"
+msgstr "Προσθήκη"
+
+msgid "Add %s"
+msgstr "Προσθήκη %s"
+
+msgid "Delete %s"
+msgstr "Διαγραφή %s"
+
+msgid "Delete"
+msgstr "Διαγραφή"
+
+msgid "Settings let you change some default behaviour for the Switchboard, like enabling drag&amp;drop, webSocket, changing the number of lines to display per button, change available presence options, etc."
+msgstr "Οι ρυθμίσεις σάς επιτρέπουν να αλλάξετε κάποια προεπιλεγμένη συμπεριφορά για τον πίνακα διανομής, όπως την ενεργοποίηση του drag & drop, το webSocket, την αλλαγή του αριθμού των γραμμών που εμφανίζονται ανά κουμπί, την αλλαγή των διαθέσιμων επιλογών παρουσίας κ.λπ."
+
+msgid "Access Control"
+msgstr "Έλεγχος Πρόσβασης"
+
+msgid "Resource"
+msgstr "Πόρος"
+
+msgid "Required Roles"
+msgstr "Απαιτούμενα Ρόλοι"
+
+msgid "From here you can define what roles are needed to access different resources on FOP2 Manager."
+msgstr "Από εδώ μπορείτε να ορίσετε τι ρόλους που απαιτούνται για την πρόσβαση σε διάφορες πηγές που FOP2 Διευθυντής"
+
+msgid "FOP2 Manager Users"
+msgstr "Οι χρήστες FOP2 Διευθυντής"
+
+msgid "From here you can manage FOP2 Manager users and their role"
+msgstr "Από εδώ μπορείτε να διαχειριστείτε τους χρήστες FOP2 Διευθυντής και ο ρόλος τους"
+
+msgid "Value cannot be empty."
+msgstr "η τιμή δεν μπορεί να είναι κενό"
+
+msgid "Please insert a login name."
+msgstr "παρακαλούμε να εισάγετε ένα όνομα χρήστη"
+
+msgid "Please fill the password"
+msgstr "συμπληρώστε τον κωδικό πρόσβασης"
+
+msgid "Please select a role for this user."
+msgstr "επιλέξτε έναν ρόλο για αυτόν τον χρήστη"
+
+msgid "That user already exists."
+msgstr "χρήστης υπάρχει ήδη"
+
+msgid "Add Record"
+msgstr "Add Record"
+
+msgid "Export"
+msgstr "Export"
+
+msgid "Import"
+msgstr "Import"
+
+msgid "No records found"
+msgstr "No records found"
+
+msgid "First"
+msgstr "First"
+
+msgid "Previous"
+msgstr "Previous"
+
+msgid "Next"
+msgstr "Next"
+
+msgid "Last"
+msgstr "Last"
+
+msgid "Page"
+msgstr "Page"
+
+msgid "of"
+msgstr "of"
+
+msgid "Total records found"
+msgstr "Total records found"
+
+msgid "View Record"
+msgstr "View Record"
+
+msgid "Edit Record"
+msgstr "Edit Record"
+
+msgid "Record inserted"
+msgstr "Record inserted"
+
+msgid "File was uploaded successfully"
+msgstr "File was uploaded successfully"
+
+msgid "Success!"
+msgstr "Success!"
+
+msgid "Record updated"
+msgstr "Record updated"
+
+msgid "An error has occurred"
+msgstr "An error has occurred"
+
+msgid "Record deleted"
+msgstr "Record deleted"
+
+msgid "Delete Marked"
+msgstr "Delete Marked"
+
+msgid "Ignoring field "
+msgstr "Ignoring field "
+
+msgid "No valid fields to import!"
+msgstr "No valid fields to import!"
+
+msgid "%s records imported"
+msgstr "%s records imported"
+
+msgid "Problems with the file upload. Check permissions on the upload directory."
+msgstr "Problems with the file upload. Check permissions on the upload directory."
+
+msgid "Error inserting record:<br>"
+msgstr "Error inserting record:<br>"
+
+msgid "Error updating record"
+msgstr "Error updating record"
+
+msgid "%s records deleted"
+msgstr "%s records deleted"
+
+msgid "Could not delete records"
+msgstr "Could not delete records"
+
+msgid "There are no records to export"
+msgstr "There are no records to export"
+
+msgid "All %s records on this page are selected."
+msgstr "All %s records on this page are selected."
+
+msgid "Select all %s records."
+msgstr "Select all %s records."
+
+msgid "All %s records are selected."
+msgstr "All %s records are selected."
+
+msgid "Clear Selection"
+msgstr "Clear Selection"
+
+msgid "Please correct this value"
+msgstr "Please correct this value"
+
+msgid "Time must be greater than $1 field"
+msgstr "Time must be greater than $1 field"
+
+msgid "Date must be greater than $1 field"
+msgstr "Date must be greater than $1 field"

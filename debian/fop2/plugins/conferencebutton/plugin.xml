@@ -1,0 +1,14 @@
+<plugin>
+    <rawname>conferencebutton</rawname>
+    <name>Conference Action Button</name>
+    <version>1.0.4</version>
+    <description>Adds a Conference button that will launch chanspy in barge mode, so you can have 3 way conferences. The user requires the 'dial' permission for the button to work.</description>
+    <description-es_ES>Agrega un botón Conferencia para lanzar chanspy en modo barge, de manera de iniciar pseudo conferencias entre tres. El usuario necesita del permiso 'dial' para que la acción se ejecute.</description-es_ES>
+    <changelog>
+        *1.0.4*   Use configured extension context instead of hardcoded from-internal, so plugin works with any backend and not only FreePBX
+        *1.0.3*   Updates for new 2.30 fop2 client
+        *1.0.2*   Add barge mode to crash into a coversation
+        *1.0.1*   Fix checking permissions for dial or all
+        *1.0.0*   Stable release
+    </changelog>
+</plugin>

@@ -1,0 +1,44 @@
+<?php
+$mylang = "he";
+$lang[$mylang] = Array();
+
+$lang[$mylang]['Manage Phonebook']               = "לנהל את ספר טלפונים";
+$lang[$mylang]['Add']                            = "להוסיף";
+$lang[$mylang]['Add Record']                     = "הוספת רישום";
+$lang[$mylang]['Export']                         = "יצוא";
+$lang[$mylang]['Import']                         = "יבוא";
+$lang[$mylang]['No records found']               = "לא נמצא רשומות";
+$lang[$mylang]['First']                          = "ראשון";
+$lang[$mylang]['Previous']                       = "קודם";
+$lang[$mylang]['Next']                           = "הבא";
+$lang[$mylang]['Last']                           = "אחרון";
+$lang[$mylang]['Page']                           = "עמוד";
+$lang[$mylang]['of']                             = "מ";
+$lang[$mylang]['Total records found']            = "סך הכל נמצא רשומות";
+$lang[$mylang]['Cancel']                         = "ביטול";
+$lang[$mylang]['View Record']                    = "צפה ברשומה";
+$lang[$mylang]['Edit Record']                    = "שינוי רשומה";
+$lang[$mylang]['Record inserted']                = "הכנס רשומה";
+$lang[$mylang]['File was uploaded successfully'] = "הקובץ הוקלט בהצלחה";
+$lang[$mylang]['Success!']                       = "הצלחה!";
+$lang[$mylang]['Record updated']                 = "הרשומה עודכנה";
+$lang[$mylang]['Are you sure?']                  = "האם אתה בטוח?";
+$lang[$mylang]['An error has occurred']          = "כרתה שיגעה";
+$lang[$mylang]['Record deleted']                 = "רשומה נמחקה";
+$lang[$mylang]['Delete Marked']                  = "למחוק בחירה";
+$lang[$mylang]['Delete']                         = "למחוק";
+$lang[$mylang]['Save']                           = "לשמור";
+$lang[$mylang]['Could not upload file']          = "לא יכל להעלות את הקובץ";
+$lang[$mylang]['Empty file?']                    = "קובץ ריק??";
+
+$lang[$mylang]['First Name'] = "שם";
+$lang[$mylang]['Last Name']  = "שם משפחה";
+$lang[$mylang]['Company']    = "חברה";
+$lang[$mylang]['Address']    = "כתובת";
+$lang[$mylang]['Phone 1']    = "טלפון-1";
+$lang[$mylang]['Phone 2']    = "טלפון-2";
+$lang[$mylang]['Picture']    = "תמונה";
+$lang[$mylang]['Search']     = "חיפוש";
+$lang[$mylang]['Private']    = "פרטי";
+$lang[$mylang]['Upload']     = "להעלות";
+$lang[$mylang]['New Image']  = "תמונה חדשה";

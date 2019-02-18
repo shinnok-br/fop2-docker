@@ -1,0 +1,63 @@
+#!/bin/bash
+#
+# chkconfig: 2345 99 15
+# description: Flash Operator Panel 
+# processname: fop2_server
+
+# source function library
+. /etc/rc.d/init.d/functions
+
+DAEMON=/usr/local/fop2/fop2_server
+RETVAL=0
+
+[ -r /etc/sysconfig/fop2 ] && . /etc/sysconfig/fop2
+
+
+case "$1" in
+  start)
+    # Stop FOP1 in Elastix
+    which amportal > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        amportal stop_fop > /dev/null 2>&1
+    fi
+    export PAR_GLOBAL_TMPDIR=/usr/local/fop2/temp
+    if [ ! -d "/usr/local/fop2/temp" ]; then
+    mkdir -p /usr/local/fop2/temp
+    fi
+    rm -rf /usr/local/fop2/temp/par-root
+	echo -n "Starting Flash Operator Panel 2: "
+	daemon $DAEMON $OPTIONS
+	RETVAL=$?
+	echo
+	[ $RETVAL -eq 0 ] && touch /var/lock/subsys/fop2_server
+	;;
+  stop)
+    rm -rf /usr/local/fop2/temp/par-root
+	echo -n "Shutting down Flash Operator Panel 2: "
+	killproc fop2_server
+	RETVAL=$?
+	echo
+	[ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/fop2_server
+	;;
+  restart)
+	$0 stop
+	$0 start
+	RETVAL=$?
+	;;
+  reload)
+	echo -n "Reloading Flash Operator Panel 2 configuration: "
+	killproc fop2_server -HUP
+	RETVAL=$?
+	echo
+	;;
+  status)
+	status fop2_server
+	RETVAL=$?
+	;;
+  *)
+	echo "Usage: fop2 {start|stop|status|restart|reload}"
+	exit 1
+esac
+
+exit $RETVAL
+
