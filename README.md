@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shinnok-br/fop2-docker.svg?branch=master)](https://travis-ci.org/shinnok-br/fop2-docker)
+
 # Container of FOP2 for Asterisk/SNEP
 
 All the configurations of FOP2 in a container!
